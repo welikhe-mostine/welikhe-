@@ -1,0 +1,14 @@
+def is_same_string(input_string, compare_string):
+    return input_string == compare_string
+if __name__ == "__main__":
+    test_cases = [
+        ("hello", "hello"),
+        ("Hello", "hello"),
+        ("world", "world!"),
+        ("Python", "Python"),
+        ("", "")
+    ]
+    for idx, (input_str, compare_str) in enumerate(test_cases):
+        result = is_same_string(input_str, compare_str)
+        print(f"Test case {idx + 1}: Is '{input_str}' the same as '{compare_str}'? {result}")
+
